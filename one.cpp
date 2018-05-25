@@ -1,4 +1,16 @@
-    QString settings;
+   
+#include <QFile>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QDebug>
+#include <QUrlQuery>
+#include <QNetworkReply>
+#include <QUrl>
+#include <QWidget>
+
+
+QString settings;
         QFile file;
         file.setFileName("C:/set.json");
         file.open(QIODevice::ReadOnly | QIODevice::Text);
